@@ -1,1 +1,12 @@
-teste
+clear
+echo "*******************************************************"
+echo "***** TESTE DE CONFIGURAÇÃO DE SCRIPT VIA GITHUB *****"
+echo "*******************************************************"
+echo
+echo "- Executando ls -lh / :"
+echo
+ls -lh /
+echo
+echo "Comando bem sucedido."
+echo
+echo
