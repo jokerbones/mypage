@@ -1,0 +1,3 @@
+#teste
+clear
+ls -lha
