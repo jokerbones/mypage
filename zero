@@ -1,1 +1,1 @@
-curl -s https://install.zerotier.com 
+curl -s https://install.zerotier.com | bash
