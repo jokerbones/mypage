@@ -1,3 +1,0 @@
-#curl -s https://install.zerotier.com | bash
-clear
-ls -lha
