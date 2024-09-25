@@ -1,4 +1,4 @@
-# Script de instalação VPN - zero
+# Script de instalação zero
 #
 curl -s https://install.zerotier.com | sudo bash
 
