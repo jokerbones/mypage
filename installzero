@@ -6,7 +6,7 @@ curl -s https://install.zerotier.com | sudo bash
 sudo zerotier-cli join 272f5eae16bbc8d1
 sudo apt install speedtest-cli -y
 clear
-echo "Conectada a rede : rede.suporte.escolas1"
+echo "Conectado a rede : rede.suporte.escolas1"
 echo
 sudo zerotier-cli info
 
