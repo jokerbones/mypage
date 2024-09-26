@@ -3,6 +3,6 @@
 curl -s https://install.zerotier.com | sudo bash
 
 # entrando na rede especificada :
-sudo zerotier-cli join 632ea2908542075e
+sudo zerotier-cli join 272f5eae16bbc8d1
 clear
 sudo zerotier-cli info
