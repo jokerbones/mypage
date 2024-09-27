@@ -1,7 +1,7 @@
 # Script de instalação zero
 #
 curl -s https://install.zerotier.com | sudo bash
-
+sudo apt install speedtest-cli -y
 # entrando na rede especificada :
 sudo zerotier-cli join 272f5eae16bbc8d1
 clear
