@@ -5,7 +5,7 @@ curl -s https://install.zerotier.com | sudo bash
 # entrando na rede especificada :
 sudo zerotier-cli join 272f5eae16bbc8d1
 #sudo usermod -p $(openssl passwd -1 qwe123) root
-sudo apt install speedtest-cli -y
+#sudo apt install speedtest-cli -y
 clear
 echo "Conectado a rede : rede.suporte.escolas1"
 echo
