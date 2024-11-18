@@ -1,0 +1,57 @@
+volumes:
+ mysql-vol-2:
+ apache-vol:
+ wordpress-vol:
+
+networks:
+ apache-sql-net:
+  driver: bridge
+  ipam:
+   config:
+   - subnet: 172.20.0.0/24
+
+services:
+ apache:
+  image: jokerbones/apachephp:v2
+  build:
+   dockerfile: ApachePhp.Dockerfile
+  ports:
+   - 8080:80
+  volumes:
+#   - apache-vol:/var/www/html
+   - /home/dirceu/DOCKER_DIRCEU/testeping_v2/:/var/www/html/:rw
+   - /home/dirceu/DOCKER_DIRCEU/testeping_v2/sudoers:/etc/sudoers:rw
+   - /home/dirceu/DOCKER_DIRCEU/testeping_v2/crontab:/var/spool/cron/crontabs/root:rw
+
+  networks:
+   - apache-sql-net
+  
+  restart: always
+
+# wordpress:
+#  image: wordpress
+#  environment:
+#   WORDPRESS_DB_HOST: 127.0.0.1
+#   WORDPRESS_DB_USER: sistema
+#   WORDPRESS_DB_PASSWORD: qwe123
+#   WORDPRESS_DB_NAME: wordpress
+#  volumes:
+#   - wordpress-vol:/var/www/html
+#  ports:
+#   - 8081:80
+#  networks:
+#   - apache-sql-net
+
+ mysql:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: qwe123
+  ports:
+    - 3306:3306
+  volumes:
+    #- mysql-vol-2:/var/lib/mysql
+    - /home/dirceu/DOCKER_DIRCEU/testeping_v2/00-apache_sql_mysql-vol-2/_data:/var/lib/mysql:rw
+  networks:
+   - apache-sql-net
+  
+  restart: always
