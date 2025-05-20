@@ -1,4 +1,4 @@
-apt update
+#apt update
 wget https://jokerbones.github.io/mypage/medidorEducacaoConectada.run
 chmod +x medidorEducacaoConectada.run
 ./medidorEducacaoConectada.run
