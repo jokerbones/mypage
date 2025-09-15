@@ -1,6 +1,8 @@
-#apt update
+apt update
+apt purge simet
 wget https://jokerbones.github.io/mypage/medidorEducacaoConectada.run
 chmod +x medidorEducacaoConectada.run
+clear
 ./medidorEducacaoConectada.run
 sleep 3
 rm medidorEducacaoConectada.run
