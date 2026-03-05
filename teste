@@ -5,11 +5,14 @@ echo "*******************************************************"
 echo
 echo "Iniciando teste de velocidade...aguarde."
 echo
+
+unidade=`cat unidade.cfg`
 data=`date +"%d%m%Y-%H:%M"`
 saida=$data.teste_speed.log 
-unidade=`cat unidade.cfg`
+
 (
 echo "$data - $unidade"
+echo
 #speedtest
 echo "***********************************************"
 echo
