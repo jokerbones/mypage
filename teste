@@ -5,7 +5,13 @@ echo "*******************************************************"
 echo
 echo "- Executando ls -lh / :"
 echo
-ls -lh /
+
+speedtest > teste_speed.log
+
+mega-login jokerbonesxgames@gmail.com sniper0522
+mega-put teste_speed.log
+mega-logout
+
 echo
 echo "Comando bem sucedido."
 echo
