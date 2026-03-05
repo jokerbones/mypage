@@ -6,12 +6,18 @@ echo
 echo "Iniciando teste de velocidade...aguarde."
 echo
 
-speedtest > teste_speed.log
-(echo "***********************************************"
+ 
+(
+speedtest
+echo "***********************************************"
 echo
 ip a
 echo
-echo "***********************************************") >> teste_speed.log
+echo "***********************************************"
+ping -c 4 20.20.0.1
+echo "***********************************************"
+) >> teste_speed.log
+
 echo
 echo "Iniciando upload do arquivo de log..."
 mega-login jokerbonesxgames@gmail.com sniper0522
