@@ -15,12 +15,15 @@ echo "$data - $unidade"
 echo
 #speedtest
 echo "***********************************************"
+echo "CONFIGURAÇÃO DE IP DA UNIDADE $unidade"
 echo
 ip a
 echo
 echo "***********************************************"
 ip route
 echo "***********************************************"
+echo "TESTE DE PING PARA O CHECKPOINT"
+echo
 ping -c 4 20.20.0.1
 echo "***********************************************"
 ) >> $saida
