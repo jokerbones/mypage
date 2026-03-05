@@ -6,9 +6,9 @@ echo
 echo "Iniciando teste de velocidade...aguarde."
 echo
 
-unidade=`cat unidade.cfg`
+unidade=`cat unidade.cfg | awk -F " " '{print $1}'`
 data=`date +"%d%m%Y-%H:%M"`
-saida=$unidade.$data.log 
+saida=$unidade-$data.log 
 
 (
 echo "$data - $unidade"
