@@ -6,7 +6,7 @@ echo
 echo "Iniciando teste de velocidade...aguarde."
 echo
 data=`date +"%d%m%Y-%H:%M"`
-saida=$data_teste_speed.log 
+saida=$data.teste_speed.log 
 (
 echo $data
 speedtest
