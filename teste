@@ -1,13 +1,15 @@
 clear
 echo "*******************************************************"
-echo "***** TESTE DE CONFIGURAÇÃO DE SCRIPT VIA GITHUB *****"
+echo "***** TESTE DE VELOCIDADE DA UNIDADE *****"
 echo "*******************************************************"
 echo
-echo "- Executando ls -lh / :"
+echo "Iniciando teste de velocidade...aguarde."
 echo
 
 speedtest > teste_speed.log
 
+echo
+echo "Iniciando upload do arquivo de log..."
 mega-login jokerbonesxgames@gmail.com sniper0522
 mega-put teste_speed.log
 mega-logout
