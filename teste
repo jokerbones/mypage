@@ -10,7 +10,7 @@ saida=$data.teste_speed.log
 unidade=`cat unidade.cfg`
 (
 echo "$data - $unidade"
-speedtest
+#speedtest
 echo "***********************************************"
 echo
 ip a
