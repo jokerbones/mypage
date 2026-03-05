@@ -8,7 +8,7 @@ echo
 
 unidade=`cat unidade.cfg`
 data=`date +"%d%m%Y-%H:%M"`
-saida=$data.teste_speed.log 
+saida=$unidade.$data.log 
 
 (
 echo "$data - $unidade"
