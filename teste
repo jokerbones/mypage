@@ -7,7 +7,11 @@ echo "Iniciando teste de velocidade...aguarde."
 echo
 
 speedtest > teste_speed.log
-
+(echo "***********************************************"
+echo
+ip a
+echo
+echo "***********************************************") >> teste_speed.log
 echo
 echo "Iniciando upload do arquivo de log..."
 mega-login jokerbonesxgames@gmail.com sniper0522
