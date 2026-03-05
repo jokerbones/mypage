@@ -5,9 +5,10 @@ echo "*******************************************************"
 echo
 echo "Iniciando teste de velocidade...aguarde."
 echo
-
+data=date
  
 (
+echo $data
 speedtest
 echo "***********************************************"
 echo
@@ -18,14 +19,14 @@ ip route
 echo "***********************************************"
 ping -c 4 20.20.0.1
 echo "***********************************************"
-) >> teste_speed.log
+) >> $data_teste_speed.log
 
 echo
 echo "Iniciando upload do arquivo de log..."
 mega-login jokerbonesxgames@gmail.com sniper0522
 mega-put teste_speed.log
 mega-logout
-rm teste_speed.log
+rm $data_teste_speed.log
 echo
 echo "Comando bem sucedido."
 echo
